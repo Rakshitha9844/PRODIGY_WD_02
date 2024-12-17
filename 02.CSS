@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Normal Navbar Style */
+#navbar {
+    background-color: #333; /* Default background color */
+}
+
+/* Hover Effect for Menu Items */
+#navbar ul li a:hover {
+    color: #ff7f50; /* Coral color */
+    background-color: #555; /* Darker background */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Scroll Effects */
+.scrolled {
+    background-color: #111; /* Darker background when scrolled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Add shadow */
+}
+
+/* Scroll Hover Effect */
+.scrolled ul li a:hover {
+    color: #ff6347; /* Tomato color when scrolled */
+    background-color: #222; /* Darker background when scrolled and hovered */
+}
+
+/* Page Section Styling */
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    color: #ff6347; /* Tomato color */
+}
+
+/* Smooth Scroll Effect for Anchor Links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust section padding to avoid overlap with navbar */
+section {
+    padding-top: 120px; /* Prevent content from being hidden under fixed navbar */
+}
+
+/* Make the hover effect and color transitions smoother */
+ul li a {
+    transition: all 0.3s ease;
+}
